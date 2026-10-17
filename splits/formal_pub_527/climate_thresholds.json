@@ -1,0 +1,12 @@
+{
+  "precip_terciles_mm_day": [
+    2.717396815738769,
+    3.464389007200081
+  ],
+  "cold_precip_medians_within_precip_tercile": [
+    0.1243643816474285,
+    0.06768899357555118,
+    0.03616544830686567
+  ],
+  "boundary_rule": "less-than-or-equal goes to lower bin; do not split equal values by basin ID"
+}

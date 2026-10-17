@@ -1,0 +1,20 @@
+{
+  "original_training": {
+    "runs": 30,
+    "python": "3.12.11",
+    "torch": "2.12.1+cu130",
+    "numpy": "2.3.2",
+    "platform": "Linux",
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "precision": "float32",
+    "deterministic_algorithms": true,
+    "tf32": false,
+    "cudnn_benchmark": false,
+    "cpu_threads": 1,
+    "backends": {
+      "B0": "native_fused",
+      "A1": "cuda_graph",
+      "M1": "cuda_graph"
+    }
+  }
+}

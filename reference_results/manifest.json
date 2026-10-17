@@ -1,0 +1,24 @@
+{
+  "kind": "derived_reference_summaries",
+  "files": {
+    "run_summary.csv": "b4441f2979b2d32035713de9280f68d438f9521cac09ded1c12ceb44b5df7e77",
+    "model_summary.csv": "efac2ea9ef6264756f2e9ef8919b4dfc9ad67272d72b85fd84bbc40f4edb4c8e",
+    "paired_nse.csv": "45a80ab4caefd5852ddc0c88b7c51550ab8cf2f2eba8cadbb08befa7bea05f3e",
+    "flow_error_budget.csv": "5823455ad0ea547de2978a5e7a5fa7b943c79b8702be967532175c396e5c34fc",
+    "flow_tradeoffs.csv": "8c1a4dfeea4ed70ff118600f72968a8bac9245e47cf6216e6ef5b23e5e9ac4ec",
+    "tertile_boundaries.csv": "b94a44bde8d955c8354282597c19b6c01e66cfdfd5276a0bc824c815611a9e05",
+    "basin_attributes_and_groups.csv": "a8c57ffcc867c8c6adde3c78c69450a0a55fea22526ec6c0e0365eb994e0ff82",
+    "attribute_group_summary.csv": "6496e291064f30ecec7740addfb1df2630e323e37ad160017d02ec71b1aa84ee",
+    "attribute_associations.csv": "9ef6d86b70c58709ce1afd214979b8a4ead7a2aa58adfda43c823f99f027f988",
+    "gates/rainfall_group_summary.csv": "0971b1324defbe1728f10a31e804922a8f218dbac001a5bacbf9065aa614c6a7",
+    "gates/paired_state_contrasts.csv": "ba96e602ef08f6b519cd95f3a9dca03144f1f0361aa6cb9096d72f44efa00ec5",
+    "gates/gate_density_data.csv": "6ecec0c1dd61c67767aca1d30aa13834e366ccc4e5d7005bdf9ac1060cae8aa4",
+    "gates/gate_error_associations.csv": "e8c87f3ac29cd71de71a44795666bf3ac19d7cf012de73a2e770aa6d9cdea7f4",
+    "gates/gate_error_scatter.csv": "d92e758f311e6901893bf249ce157f59a2d5e38875733e579b01567d9c7f1ff8",
+    "gates/basin_seed_bin_curves.csv": "f4045dcbdf3f301394998d01a7c7e1dc28ba77b1c22dadd4eb47a0bb5f27a4f6",
+    "temporal/cross_period_summary.csv": "4c3b0e042b574544f0222cc4aea31c68449b46fcd38b8f98cc65c96646546f7a",
+    "temporal/cross_period_basin_effects.csv": "53d02a210081a8644824cb25b32701ec8b030567dcdd2a3dba342aaedaec8f85",
+    "temporal/cross_period_seed_consistency.csv": "5fccd2f69fd8a395813a95eb3414b68ad9c75e7cebeaff3ab849caf21ee0e04a",
+    "temporal/cross_period_joint_pattern_consistency.csv": "4ca646c695e52e07eeb2a992e98368747a71847d4b3da5f72f2714f6db3e1a70"
+  }
+}

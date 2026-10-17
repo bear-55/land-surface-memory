@@ -1,0 +1,132 @@
+{
+  "model": {
+    "models": {
+      "B0": "none",
+      "M1": "conditional",
+      "A1": "shared"
+    },
+    "layers": 1,
+    "hidden_size": 64,
+    "rank": 4,
+    "seq_length": 365,
+    "output_dropout": 0.2,
+    "output_head": "softplus",
+    "initial_state": "zero_per_window",
+    "adapter_U_init": "zeros",
+    "adapter_A_V_init": "nonzero_random",
+    "copy_common_initial_backbone": true
+  },
+  "features": {
+    "dynamic": [
+      "prcp",
+      "srad",
+      "tmax",
+      "tmin",
+      "vp"
+    ],
+    "static_groups": [
+      "C",
+      "L"
+    ],
+    "controller_group": "L",
+    "manifest": "data_contract/feature_manifest.csv",
+    "manifest_frozen": true,
+    "area_field_for_q": "forcing_header_area_m2",
+    "include_basin_id": false,
+    "include_observed_q_history": false,
+    "include_q_derived_attributes": false,
+    "static_log1p": [
+      "area_geospa_fabric"
+    ],
+    "static_missing_indicators": [
+      "geol_porosity"
+    ]
+  },
+  "training": {
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "grad_clip_norm": 1.0,
+    "batch_size": 64,
+    "max_epochs": 30,
+    "early_stop_metric": "validation_median_NSE",
+    "patience": 8,
+    "paired_seed_count": 10,
+    "paired_seeds": [
+      11,
+      29,
+      47,
+      65,
+      83,
+      103,
+      119,
+      137,
+      155,
+      173
+    ],
+    "confirmation_seeds": [
+      11,
+      29,
+      47,
+      65,
+      83,
+      103,
+      119,
+      137,
+      155,
+      173
+    ],
+    "sampling": "uniform_basin_then_uniform_valid_window_with_replacement",
+    "share_batch_indices_across_models": true,
+    "windows_per_epoch": "total_valid_training_windows",
+    "loss": "mean_squared_error_divided_by_source_sigma_plus_epsilon_squared",
+    "epsilon_mm_day": 0.1,
+    "q_ref": "max_median_source_training_basin_mean_q_or_0.1",
+    "sigma_ddof": 0
+  },
+  "evaluation": {
+    "common_valid_date_mask": true,
+    "min_valid_days": 365,
+    "nse_variance_rule": "population_variance_greater_than_1e-12_mm2_per_day2",
+    "high_flow_quantile": 0.95,
+    "read_final_test_q": false,
+    "final_protocol_frozen": true,
+    "final_test_access_log": "runs/test_label_access.jsonl",
+    "early_stop_min_delta": 0.0,
+    "early_stop_tie_rule": "keep_earliest_best",
+    "nonfinite_prediction": "fail_run_do_not_change_valid_date_mask",
+    "primary_summary": "Per-seed median basin NSE, then mean and sample SD across ten seeds; report all seed medians.",
+    "prior_quality_audit_read_test_q": true,
+    "formal_training_reads_test_q": false
+  },
+  "periods": {
+    "climate_reference": [
+      "1980-10-01",
+      "1989-09-30"
+    ],
+    "train_labels": [
+      "1989-10-01",
+      "1999-09-30"
+    ],
+    "development_labels": [
+      "1999-10-01",
+      "2003-09-30"
+    ],
+    "final_labels": [
+      "2003-10-01",
+      "2008-09-30"
+    ],
+    "frozen_same_period_diagnostic": [
+      "1989-10-01",
+      "1999-09-30"
+    ]
+  },
+  "protocol": "formal_random_pub_527",
+  "split_counts": {
+    "train": 370,
+    "val": 50,
+    "test": 107
+  },
+  "forcing_source": "daymet",
+  "target_unit": "mm/day"
+}

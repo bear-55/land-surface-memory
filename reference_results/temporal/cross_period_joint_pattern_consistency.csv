@@ -1,0 +1,13 @@
+﻿threshold_scheme,comparison,group,target_pattern,n_seeds,n_original_pattern,n_confirmation_pattern,n_both_periods_pattern,seed11_both_periods_pattern,seed29_both_periods_pattern,seed47_both_periods_pattern,seed65_both_periods_pattern,seed83_both_periods_pattern,seed103_both_periods_pattern,seed119_both_periods_pattern,seed137_both_periods_pattern,seed155_both_periods_pattern,seed173_both_periods_pattern
+period_relative,M1_B0,frac_forest_high,mid improvement and high degradation,10,6,3,2,True,False,False,False,False,True,False,False,False,False
+period_relative,M1_B0,slope_mean_high,mid improvement and high degradation,10,5,3,3,True,False,True,False,False,True,False,False,False,False
+period_relative,M1_B0,clay_frac_high,mid degradation and high improvement,10,5,2,2,False,False,False,False,False,False,False,False,True,True
+period_relative,M1_A1,frac_forest_high,mid improvement and high degradation,10,4,5,3,False,False,True,False,False,False,False,True,False,True
+period_relative,M1_A1,slope_mean_high,mid improvement and high degradation,10,5,5,4,False,False,True,False,False,True,True,False,False,True
+period_relative,M1_A1,clay_frac_high,mid degradation and high improvement,10,5,5,3,True,False,False,False,False,False,True,False,True,False
+original_absolute,M1_B0,frac_forest_high,mid improvement and high degradation,10,6,2,1,True,False,False,False,False,False,False,False,False,False
+original_absolute,M1_B0,slope_mean_high,mid improvement and high degradation,10,5,4,4,True,False,True,False,False,True,True,False,False,False
+original_absolute,M1_B0,clay_frac_high,mid degradation and high improvement,10,5,2,2,False,False,False,False,False,False,False,False,True,True
+original_absolute,M1_A1,frac_forest_high,mid improvement and high degradation,10,4,5,3,False,False,True,False,False,False,False,True,False,True
+original_absolute,M1_A1,slope_mean_high,mid improvement and high degradation,10,5,4,3,False,False,True,False,False,True,True,False,False,False
+original_absolute,M1_A1,clay_frac_high,mid degradation and high improvement,10,5,4,3,True,False,False,False,False,False,True,False,True,False

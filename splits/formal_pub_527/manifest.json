@@ -1,0 +1,19 @@
+{
+  "counts": {
+    "train": 370,
+    "val": 50,
+    "test": 107
+  },
+  "sha256": {
+    "train.txt": "d857894dc6a6ccf3c5a19f9acfc7c57d63d6e29a653183d9386658ebca9ab8e9",
+    "val.txt": "29c21cc7d5f8a58bf66d8eacbd9341e1134bc9f63332fee69852277096f51a31",
+    "test.txt": "dd5d93c7d30bda6d66a1c0d602e74905afa717443c03be9e7bd9a6f8340db585",
+    "candidate_attributes.csv": "8c1ea9ce9b0b5cd925d9c949c35e4ff8bf3e1109445eca93cc6d317345cb8032",
+    "basin_assignment.csv": "b58c8b73d253ccc84ff00110566215ac3ad91cf2c50bc525c28cd0b51cb09a3c"
+  },
+  "split_seed_components": [
+    20260915,
+    0
+  ],
+  "frozen_split": true
+}

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Please cite this software and the CAMELS-US data sources when using this code."
+type: software
+title: "Land-surface-conditioned memory: flow-regime performance and training repeatability"
+version: 0.1.0
+date-released: 2026-10-17
+license: MIT
+authors:
+  - family-names: Wu
+    given-names: Xiong
+  - family-names: Fu
+    given-names: Xiaoran
+  - family-names: Jiang
+    given-names: Jinlun
+  - family-names: Zhang
+    given-names: Haijia
+  - family-names: Sun
+    given-names: Hongquan
+  - family-names: Wang
+    given-names: Zhonggen
+keywords:
+  - hydrology
+  - CAMELS-US
+  - LSTM
+  - ungauged basins
+  - training repeatability
+

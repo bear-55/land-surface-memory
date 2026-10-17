@@ -1,0 +1,7 @@
+comparison,metric,n_basins,opposite_sign_basins,all_regimes_improved
+M1-B0,mae_mm_day,107,71,17
+M1-B0,mse_mm2_day2,107,66,17
+M1-A1,mae_mm_day,107,73,12
+M1-A1,mse_mm2_day2,107,74,11
+A1-B0,mae_mm_day,107,72,17
+A1-B0,mse_mm2_day2,107,63,23
